@@ -7,5 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function scrollHandler(e){
-    console.log(e)
+    if ((wrapper.scrollTop + wrapper.offsetHeight) > (wrapper.offsetHeight + 100)){
+        console.log('Load...')
+    }
 }
